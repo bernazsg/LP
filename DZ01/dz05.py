@@ -26,7 +26,7 @@ while True:
     raschet = vyruchka - izderjki
     if raschet > 0:
         pribyl = raschet
-        print(f"Фирма вышла в прибыль на + {pribyl} руб.")
+        print(f"Фирма вышла в прибыль на + {pribyl} руб. Рентабельность составила: {pribyl / vyruchka * 100:.2f}%")
         break
     elif raschet == 0:
         print("Фирма вышла в ноль.")
