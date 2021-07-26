@@ -11,7 +11,8 @@ while True:
 
 tceloe = int(tceloe)
 naibolsh = 0
-while tceloe >= 1:
+ostatok = 0
+while tceloe >= 1 and ostatok < 9:
     ostatok = tceloe % 10
     tceloe //= 10
     if naibolsh < ostatok:
