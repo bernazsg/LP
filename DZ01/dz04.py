@@ -15,8 +15,7 @@ ostatok = 0
 while tceloe >= 1 and ostatok < 9:
     ostatok = tceloe % 10
     tceloe //= 10
-    if naibolsh < ostatok:
-        naibolsh = ostatok
+    naibolsh = ostatok if ostatok > naibolsh else naibolsh
 
 print(f"Наибольшая цифра во введённом числе - {naibolsh}.")
 
